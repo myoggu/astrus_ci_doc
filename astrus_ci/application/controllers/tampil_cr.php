@@ -75,6 +75,7 @@ class tampil_cr extends CI_Controller{
 		echo $f_telepon  = $telepon;
 		echo "<br>";
 		$this->db_model->tambah_data($f_nama,$f_alamat,$f_kodepos,$f_telepon);
+		redirect('tampil_cr/index_a');
 
 	}
 }
